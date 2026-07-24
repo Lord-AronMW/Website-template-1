@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{Company Name} — Luxury Interior Design Website Template</title>
+<meta name="description" content="A skeletal website template preview for a luxury interior design studio. Replace all {bracketed} placeholders with your own branding and content.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div id="preloader">
+  <div class="mark">{Company Logo}</div>
+  <div class="loadbar"><span id="loadbarFill"></span></div>
+</div>
+
+<div id="spine"><svg><line x1="1" y1="0" x2="1" y2="100%" stroke="var(--line)" stroke-width="1"/><line id="spineFill" x1="1" y1="0" x2="1" y2="0" stroke="var(--gold)" stroke-width="1"/></svg></div>
+
+<!-- ============ HEADER ============ -->
+<header id="siteHeader">
+  <a href="#hero" class="logo" id="logoHome" aria-label="Back to home">{Company Logo}</a>
+  <nav class="links">
+    <a href="#rooms">Studio</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#services">Services</a>
+    <a href="#process">Process</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact" class="nav-cta">Book Consultation</a>
+  <div class="menu-btn"><span></span><span></span></div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-vignette"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-inner">
+    <div class="hero-kicker eyebrow"><span>{Studio Tagline} · {City / Region}</span></div>
+    <h1 class="hero-headline">
+      <span class="line"><span>Crafting Spaces</span></span>
+      <span class="line"><span>That Inspire <em>Luxury.</em></span></span>
+    </h1>
+    <p class="hero-sub">Premium Interior Design <b>·</b> Modular Kitchens <b>·</b> Turnkey Projects <b>·</b> Renovations — bespoke homes designed and delivered end to end, by a studio obsessed with detail.</p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn-gold">Book Free Consultation</a>
+      <a href="#portfolio" class="btn-ghost">View Portfolio</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><div class="track"><i></i></div><span>Scroll</span></div>
+</section>
+
+<!-- ============ ROOM EXPERIENCE ============ -->
+<section id="rooms">
+  <div class="container rooms-head">
+    <div class="eyebrow reveal">The Studio Experience</div>
+    <h2 class="section-title reveal">One studio, <em>five worlds</em> of living.</h2>
+  </div>
+  <div id="rooms-pin">
+    <div class="rooms-track" id="roomsTrack">
+
+      <div class="room-panel">
+        <div class="room-bg"></div>
+        <div class="room-content">
+          <div class="room-info">
+            <span class="room-index">01 — Living Room</span>
+            <h3>The Living Room</h3>
+            <p>Warm walnut panelling, low-slung furniture, and layered lighting built around how your family actually gathers.</p>
+            <div class="room-tags"><span>Walnut Panelling</span><span>Layered Lighting</span><span>Custom Seating</span></div>
+          </div>
+          <div class="room-art"><div class="frame-corner fc-tl"></div><div class="frame-corner fc-br"></div>
+            <svg viewBox="0 0 300 375" fill="none" stroke="var(--gold)" stroke-width="1" opacity="0.55">
+              <rect x="40" y="230" width="220" height="70" rx="6"/><line x1="40" y1="250" x2="260" y2="250"/>
+              <rect x="60" y="150" width="70" height="50" rx="4"/><rect x="170" y="150" width="70" height="50" rx="4"/>
+              <line x1="20" y1="330" x2="280" y2="330"/><rect x="20" y="60" width="260" height="120" rx="4"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-panel">
+        <div class="room-bg"></div>
+        <div class="room-content">
+          <div class="room-info">
+            <span class="room-index">02 — Modular Kitchen</span>
+            <h3>Modular Kitchen</h3>
+            <p>German hardware, seamless islands, and matte finishes engineered for a decade of daily use without wear.</p>
+            <div class="room-tags"><span>German Hardware</span><span>Quartz Islands</span><span>Matte Finish</span></div>
+          </div>
+          <div class="room-art"><div class="frame-corner fc-tl"></div><div class="frame-corner fc-br"></div>
+            <svg viewBox="0 0 300 375" fill="none" stroke="var(--gold)" stroke-width="1" opacity="0.55">
+              <rect x="30" y="180" width="240" height="90" rx="4"/><rect x="90" y="60" width="120" height="80" rx="4"/>
+              <line x1="30" y1="205" x2="270" y2="205"/><circle cx="150" cy="225" r="18"/>
+              <line x1="30" y1="300" x2="270" y2="300"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-panel">
+        <div class="room-bg"></div>
+        <div class="room-content">
+          <div class="room-info">
+            <span class="room-index">03 — Master Bedroom</span>
+            <h3>Master Bedroom</h3>
+            <p>A sanctuary of soft textiles, hidden storage, and dimmable ambient light designed purely for rest.</p>
+            <div class="room-tags"><span>Bespoke Headboards</span><span>Ambient Dimming</span><span>Hidden Storage</span></div>
+          </div>
+          <div class="room-art"><div class="frame-corner fc-tl"></div><div class="frame-corner fc-br"></div>
+            <svg viewBox="0 0 300 375" fill="none" stroke="var(--gold)" stroke-width="1" opacity="0.55">
+              <rect x="50" y="150" width="200" height="110" rx="8"/><line x1="50" y1="175" x2="250" y2="175"/>
+              <rect x="30" y="120" width="30" height="140" rx="4"/><rect x="240" y="120" width="30" height="140" rx="4"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-panel">
+        <div class="room-bg"></div>
+        <div class="room-content">
+          <div class="room-info">
+            <span class="room-index">04 — Walk-in Wardrobe</span>
+            <h3>Walk-in Wardrobe</h3>
+            <p>Backlit glass shelving, tailored compartments, and mirror-finish islands built around your wardrobe, not a template.</p>
+            <div class="room-tags"><span>Backlit Shelving</span><span>Glass Fronts</span><span>Mirror Island</span></div>
+          </div>
+          <div class="room-art"><div class="frame-corner fc-tl"></div><div class="frame-corner fc-br"></div>
+            <svg viewBox="0 0 300 375" fill="none" stroke="var(--gold)" stroke-width="1" opacity="0.55">
+              <rect x="40" y="50" width="80" height="270"/><rect x="130" y="50" width="80" height="270"/><rect x="220" y="50" width="40" height="270"/>
+              <line x1="40" y1="120" x2="120" y2="120"/><line x1="40" y1="190" x2="120" y2="190"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-panel">
+        <div class="room-bg"></div>
+        <div class="room-content">
+          <div class="room-info">
+            <span class="room-index">05 — Office Interior</span>
+            <h3>Office Interior</h3>
+            <p>Focused workspaces balancing acoustics, natural light, and brand identity for teams that mean business.</p>
+            <div class="room-tags"><span>Acoustic Panels</span><span>Biophilic Design</span><span>Brand Integration</span></div>
+          </div>
+          <div class="room-art"><div class="frame-corner fc-tl"></div><div class="frame-corner fc-br"></div>
+            <svg viewBox="0 0 300 375" fill="none" stroke="var(--gold)" stroke-width="1" opacity="0.55">
+              <rect x="40" y="160" width="220" height="12"/><rect x="60" y="172" width="30" height="70"/><rect x="210" y="172" width="30" height="70"/>
+              <rect x="100" y="70" width="100" height="70" rx="4"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="room-dots" id="roomDots">
+      <i class="active"></i><i></i><i></i><i></i><i></i>
+    </div>
+    <div class="room-progress-label" id="roomProgress">01 / 05</div>
+    <button class="room-nav-btn" id="roomNextBtn" aria-label="Next room">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--warm-white)" stroke-width="1.6"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal"><div class="stat-num"><span class="counter" data-target="200">0</span><em>+</em></div><div class="stat-label">Projects Delivered</div></div>
+      <div class="stat-item reveal"><div class="stat-num"><span class="counter" data-target="5">0</span><em>★</em></div><div class="stat-label">Client Satisfaction</div></div>
+      <div class="stat-item reveal"><div class="stat-num"><span class="counter" data-target="98">0</span><em>%</em></div><div class="stat-label">On-time Delivery</div></div>
+      <div class="stat-item reveal"><div class="stat-num"><span class="counter" data-target="100">0</span><em>%</em></div><div class="stat-label">Custom Designs</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO ============ -->
+<section id="portfolio">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Selected Work</div>
+      <h2 class="section-title">A portfolio built on <em>restraint.</em></h2>
+    </div>
+    <div class="masonry">
+      <div class="mason-item reveal" data-title="{Project Name}" data-cat="Full Home Interior">
+        <div class="plate">
+          <svg class="plate-art" viewBox="0 0 300 400" fill="none" stroke="var(--gold-bright)" stroke-width="1"><rect x="30" y="260" width="150" height="60" rx="4"/><rect x="60" y="150" width="60" height="90" rx="3"/><rect x="150" y="180" width="90" height="60" rx="3"/><line x1="20" y1="330" x2="280" y2="330"/></svg>
+          <div class="mason-cat">Full Home Interior</div><div class="mason-title">{Project Name}</div>
+        </div>
+        <div class="mason-expand"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold-bright)" stroke-width="1.6"><path d="M8 3H3v5M16 3h5v5M3 16v5h5M21 16v5h-5"/></svg></div>
+      </div>
+      <div class="mason-item reveal" data-title="{Project Name}" data-cat="Modular Kitchen">
+        <div class="plate">
+          <svg class="plate-art" viewBox="0 0 300 300" fill="none" stroke="var(--gold-bright)" stroke-width="1"><rect x="20" y="180" width="260" height="70" rx="3"/><circle cx="150" cy="215" r="16"/><rect x="90" y="60" width="120" height="70" rx="3"/></svg>
+          <div class="mason-cat">Modular Kitchen</div><div class="mason-title">{Project Name}</div>
+        </div>
+        <div class="mason-expand"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold-bright)" stroke-width="1.6"><path d="M8 3H3v5M16 3h5v5M3 16v5h5M21 16v5h-5"/></svg></div>
+      </div>
+      <div class="mason-item reveal" data-title="{Project Name}" data-cat="Turnkey Project">
+        <div class="plate">
+          <svg class="plate-art" viewBox="0 0 300 460" fill="none" stroke="var(--gold-bright)" stroke-width="1"><path d="M40 420V120l110-70 110 70v300"/><line x1="40" y1="260" x2="260" y2="260"/><rect x="120" y="330" width="60" height="90"/></svg>
+          <div class="mason-cat">Turnkey Project</div><div class="mason-title">{Project Name}</div>
+        </div>
+        <div class="mason-expand"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold-bright)" stroke-width="1.6"><path d="M8 3H3v5M16 3h5v5M3 16v5h5M21 16v5h-5"/></svg></div>
+      </div>
+      <div class="mason-item reveal" data-title="{Project Name}" data-cat="Renovation">
+        <div class="plate">
+          <svg class="plate-art" viewBox="0 0 300 320" fill="none" stroke="var(--gold-bright)" stroke-width="1"><path d="M40 40l220 220M260 40L40 260" opacity="0.5"/><rect x="70" y="150" width="160" height="90" rx="4"/></svg>
+          <div class="mason-cat">Renovation</div><div class="mason-title">{Project Name}</div>
+        </div>
+        <div class="mason-expand"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold-bright)" stroke-width="1.6"><path d="M8 3H3v5M16 3h5v5M3 16v5h5M21 16v5h-5"/></svg></div>
+      </div>
+      <div class="mason-item reveal" data-title="{Project Name}" data-cat="Master Bedroom">
+        <div class="plate">
+          <svg class="plate-art" viewBox="0 0 300 380" fill="none" stroke="var(--gold-bright)" stroke-width="1"><rect x="60" y="190" width="180" height="100" rx="8"/><line x1="60" y1="215" x2="240" y2="215"/><rect x="40" y="160" width="26" height="130" rx="3"/><rect x="234" y="160" width="26" height="130" rx="3"/></svg>
+          <div class="mason-cat">Master Bedroom</div><div class="mason-title">{Project Name}</div>
+        </div>
+        <div class="mason-expand"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold-bright)" stroke-width="1.6"><path d="M8 3H3v5M16 3h5v5M3 16v5h5M21 16v5h-5"/></svg></div>
+      </div>
+      <div class="mason-item reveal" data-title="{Project Name}" data-cat="Commercial Interior">
+        <div class="plate">
+          <svg class="plate-art" viewBox="0 0 300 280" fill="none" stroke="var(--gold-bright)" stroke-width="1"><rect x="30" y="30" width="240" height="220" rx="4"/><line x1="30" y1="100" x2="270" y2="100"/><line x1="30" y1="170" x2="270" y2="170"/><line x1="120" y1="30" x2="120" y2="250"/></svg>
+          <div class="mason-cat">Commercial Interior</div><div class="mason-title">{Project Name}</div>
+        </div>
+        <div class="mason-expand"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold-bright)" stroke-width="1.6"><path d="M8 3H3v5M16 3h5v5M3 16v5h5M21 16v5h-5"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">What We Do</div>
+      <h2 class="section-title">Every discipline a <em>luxury home</em> requires.</h2>
+    </div>
+    <div class="services-grid reveal">
+      <div class="service-card"><svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.3"><path d="M3 11l9-7 9 7M5 10v10h14V10"/></svg><h4>Home Interiors</h4><p>End-to-end residential design from concept to handover.</p></div>
+      <div class="service-card"><svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.3"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M8 8V5h8v3"/></svg><h4>Modular Kitchens</h4><p>German fittings, quartz tops, engineered for daily luxury.</p></div>
+      <div class="service-card"><svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.3"><path d="M4 20h16M6 20V10l6-4 6 4v10"/></svg><h4>False Ceiling</h4><p>Layered gypsum ceilings with concealed cove lighting.</p></div>
+      <div class="service-card"><svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.3"><rect x="4" y="3" width="16" height="18" rx="1"/><line x1="12" y1="3" x2="12" y2="21"/></svg><h4>Wardrobes</h4><p>Walk-ins and sliding units tailored to your wardrobe.</p></div>
+      <div class="service-card"><svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.3"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M8 20h8M12 16v4"/></svg><h4>TV Units</h4><p>Sculptural media walls that anchor the living room.</p></div>
+      <div class="service-card"><svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M12 12v9M9 21h6"/></svg><h4>Lighting</h4><p>Layered ambient, task, and accent lighting design.</p></div>
+      <div class="service-card"><svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.3"><path d="M3 3l18 18M3 21L21 3"/></svg><h4>Renovation</h4><p>Reimagining existing spaces without the stress.</p></div>
+      <div class="service-card"><svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.3"><rect x="4" y="2" width="16" height="20" rx="1"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="13" x2="16" y2="13"/></svg><h4>Commercial Interiors</h4><p>Offices and retail spaces built for brand and focus.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS / WHY CHOOSE US ============ -->
+<section id="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Why Choose Us</div>
+      <h2 class="section-title">A process built for <em>zero surprises.</em></h2>
+    </div>
+    <div class="timeline reveal">
+      <div class="timeline-line"><div class="timeline-line-fill" id="tlFill"></div></div>
+      <div class="timeline-row" id="tlRow">
+        <div class="tl-step"><div class="tl-dot">01</div><h4>Consultation</h4><p>A free walkthrough to understand how you actually live.</p></div>
+        <div class="tl-step"><div class="tl-dot">02</div><h4>3D Design</h4><p>Photoreal concepts and moodboards before a nail is hit.</p></div>
+        <div class="tl-step"><div class="tl-dot">03</div><h4>Material Selection</h4><p>Curated finishes, veneers, and hardware in-studio.</p></div>
+        <div class="tl-step"><div class="tl-dot">04</div><h4>Execution</h4><p>In-house project management, zero subcontractor guesswork.</p></div>
+        <div class="tl-step"><div class="tl-dot">05</div><h4>Delivery</h4><p>A styled, move-in ready home, handed over on schedule.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Client Words</div>
+      <h2 class="section-title">Loved on <em>Google</em> and in person.</h2>
+    </div>
+    <div class="tst-wrap reveal">
+      <div class="tst-track" id="tstTrack">
+        <div class="tst-card"><div class="tst-stars">★★★★★</div><p class="tst-quote">"{A short, authentic client testimonial goes here — one or two sentences about their experience.}"</p><div class="tst-person"><div class="tst-avatar">{}</div><div><div class="tst-name">{Client Name}</div><div class="tst-role">{Location · Project Type}</div></div></div></div>
+        <div class="tst-card"><div class="tst-stars">★★★★★</div><p class="tst-quote">"{Another sample testimonial quote — keep it short and specific to build trust.}"</p><div class="tst-person"><div class="tst-avatar">{}</div><div><div class="tst-name">{Client Name}</div><div class="tst-role">{Location · Project Type}</div></div></div></div>
+        <div class="tst-card"><div class="tst-stars">★★★★★</div><p class="tst-quote">"{A third sample testimonial quote, ideally pulled from a real Google review.}"</p><div class="tst-person"><div class="tst-avatar">{}</div><div><div class="tst-name">{Client Name}</div><div class="tst-role">{Location · Project Type}</div></div></div></div>
+        <div class="tst-card"><div class="tst-stars">★★★★★</div><p class="tst-quote">"{A fourth sample testimonial quote — rotate in real reviews as you collect them.}"</p><div class="tst-person"><div class="tst-avatar">{}</div><div><div class="tst-name">{Client Name}</div><div class="tst-role">{Location · Project Type}</div></div></div></div>
+      </div>
+      <div class="tst-nav">
+        <button id="tstPrev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--warm-white)" stroke-width="1.6"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button id="tstNext"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--warm-white)" stroke-width="1.6"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Start Your Project</div>
+      <h2 class="section-title">Let's design your <em>dream home.</em></h2>
+    </div>
+    <div class="contact-shell reveal">
+      <div class="contact-form">
+        <div class="field"><label>Full Name</label><input type="text" placeholder="Your name"></div>
+        <div class="field"><label>Phone Number</label><input type="tel" placeholder="+91"></div>
+        <div class="field"><label>Project Type</label>
+          <select><option>Full Home Interior</option><option>Modular Kitchen</option><option>Renovation</option><option>Commercial Interior</option></select>
+        </div>
+        <div class="field"><label>Tell us about your space</label><textarea placeholder="City, home size, timeline..."></textarea></div>
+        <div class="contact-actions">
+          <button type="button" class="btn-gold">Request Free Site Visit</button>
+          <a href="https://wa.me/{YourWhatsAppNumber}" class="btn-whatsapp" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#0a0908"><path d="M20.5 3.5A11.8 11.8 0 0012 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.7.9 3.7 1.4 5.8 1.4 6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.5zM12 21.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-3.7 1 1-3.6-.2-.4A9.7 9.7 0 012.2 12C2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8z"/></svg>
+            WhatsApp Us
+          </a>
+          <a href="tel:+{YourPhoneNumber}" class="btn-call">Call Now</a>
+        </div>
+      </div>
+      <div class="contact-map">
+        <iframe src="https://maps.google.com/maps?q=Your+Business+Address&t=&z=12&ie=UTF8&iwloc=&output=embed" loading="lazy" style="border:0;"></iframe>
+        <div class="contact-map-overlay"></div>
+      </div>
+    </div>
+
+    <div class="footer-top" style="margin-top:60px; padding-bottom:0;"></div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#hero" class="logo" aria-label="Back to home">{Company Logo}</a>
+        <p>{A line or two describing your studio — what you do, where you work, and what sets you apart.}</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h5>Studio</h5><a href="#rooms">Room Experience</a><a href="#portfolio">Portfolio</a><a href="#services">Services</a></div>
+        <div class="footer-col"><h5>Connect</h5><a href="#" target="_blank" rel="noopener">Instagram</a><a href="https://wa.me/{YourWhatsAppNumber}" target="_blank" rel="noopener">WhatsApp</a><a href="mailto:{your@email.com}">{your@email.com}</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> {Company Name}. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--warm-white)" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="https://wa.me/{YourWhatsAppNumber}" aria-label="WhatsApp" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--warm-white)" stroke-width="1.5"><path d="M20.5 3.5A11.8 11.8 0 0012 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.7.9 3.7 1.4 5.8 1.4 6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.5z"/></svg></a>
+        <a href="mailto:{your@email.com}" aria-label="Email"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--warm-white)" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP BUBBLE ============ -->
+<a href="https://wa.me/{YourWhatsAppNumber}" target="_blank" rel="noopener" class="wa-float" id="waFloat" aria-label="Chat with us on WhatsApp">
+  <span class="wa-tooltip">Chat with us</span>
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#0a0908"><path d="M20.5 3.5A11.8 11.8 0 0012 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.7.9 3.7 1.4 5.8 1.4 6.6 0 12-5.4 12-12 0-3.2-1.2-6.2-3.5-8.5zM12 21.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-3.7 1 1-3.6-.2-.4A9.7 9.7 0 012.2 12C2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8z"/></svg>
+</a>
+
+<!-- ============ LIGHTBOX ============ -->
+<div id="lightbox">
+  <div class="lightbox-close" id="lightboxClose"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold-bright)" stroke-width="1.6"><path d="M6 6l12 12M18 6L6 18"/></svg></div>
+  <div class="lightbox-panel" id="lightboxPanel">
+    <div class="lightbox-meta"><div class="mason-cat" id="lbCat">Category</div><div class="mason-title" id="lbTitle" style="font-size:30px;">Title</div></div>
+  </div>
+</div>
+
+<!-- ============ LIBRARIES ============ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+
+<script src="script.js" defer></script>
+</body>
+</html>
